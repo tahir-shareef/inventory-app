@@ -1,4 +1,4 @@
-import { Box, Button, ListItemText, Popover, Typography } from '@mui/material';
+import { Box, Button, ListItemText, Popover } from '@mui/material';
 import React from 'react';
 import {
   NavLink as MUINavLink,

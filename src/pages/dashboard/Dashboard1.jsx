@@ -101,7 +101,7 @@ const Dashboard = () => {
                   <TableCell>Alert amt.</TableCell>
                   <TableCell>Status</TableCell>
                 </TableRow>
-              </BasicTable>
+              </BasicTable> 
             </Card>
           </Grid>
           <Grid xs={4} item>

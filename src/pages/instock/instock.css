@@ -1,0 +1,23 @@
+.in-stock {
+  height: 100%;
+  background-color: white;
+  padding-top: 30px;
+}
+.MuiTypography-root.instock-heading {
+  color: blue;
+  font-weight: bold;
+  font-size: 32px;
+  margin-left: 20px;
+}
+.MuiSvgIcon-root.calendar-icon {
+  font-size: 2rem;
+  border: 2px solid rgb(193, 193, 193);
+  margin: 5px;
+  padding: 10px;
+  box-sizing: content-box;
+  margin-right: 15px;
+}
+
+.in-stock .PrivateSwitchBase-root {
+  height: 18px;
+}
