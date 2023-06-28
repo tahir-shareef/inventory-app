@@ -16,7 +16,6 @@ const NavLink = ({ href, isHaveDropdown, dropdown, icon, label }) => {
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
-    console.log(event.currentTarget);
   };
 
   const handleClose = () => {
