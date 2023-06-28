@@ -16,6 +16,7 @@ const NavLink = ({ href, isHaveDropdown, dropdown, icon, label }) => {
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
+    console.log(event.currentTarget);
   };
 
   const handleClose = () => {
@@ -26,7 +27,7 @@ const NavLink = ({ href, isHaveDropdown, dropdown, icon, label }) => {
     <>
       <MUINavLink
         to={href}
-        onClick={(e) => {
+        onMouseEnter={(e) => {
           if (isHaveDropdown) {
             e.preventDefault();
             handleClick(e);
@@ -63,24 +64,25 @@ const NavLink = ({ href, isHaveDropdown, dropdown, icon, label }) => {
         anchorEl={anchorEl}
         onClose={handleClose}
         anchorOrigin={{
-          vertical: 'bottom',
-          horizontal: 'left'
+          horizontal: 'right'
         }}
       >
-        {dropdown.map((l) => {
-          return (
-            <Box>
-              <Button
-                onClick={() => {
-                  navigate(l.href);
-                  handleClose();
-                }}
-              >
-                {l.label}
-              </Button>
-            </Box>
-          );
-        })}
+        <Box onMouseLeave={handleClose}>
+          {dropdown.map((l) => {
+            return (
+              <Box>
+                <Button
+                  onClick={() => {
+                    navigate(l.href);
+                    handleClose();
+                  }}
+                >
+                  {l.label}
+                </Button>
+              </Box>
+            );
+          })}
+        </Box>
       </Popover>
     </>
   );
