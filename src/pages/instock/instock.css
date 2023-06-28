@@ -21,3 +21,7 @@
 .in-stock .PrivateSwitchBase-root {
   height: 18px;
 }
+
+.mr-15 {
+  margin-right: 15px !important;
+}

@@ -51,6 +51,38 @@ export const inStockHeadCells = [
   }
 ];
 
+export const ordersHeadCells = [
+  {
+    label: 'Order ID',
+    id: 'orderID'
+  },
+  {
+    label: 'Date',
+    id: 'date'
+  },
+  {
+    label: 'Customer',
+    id: 'customer'
+  },
+  {
+    label: 'Sales Channel',
+    id: 'salesChannel'
+  },
+  {
+    label: 'Destination',
+    id: 'destination'
+  },
+  {
+    label: 'Items',
+    id: 'items'
+  },
+  {
+    label: 'Status',
+    id: 'status'
+  }
+];
+
+
 export const topSellingsProductsHeadCells = [
   {
     label: 'Order id',

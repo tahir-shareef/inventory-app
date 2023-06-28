@@ -42,12 +42,19 @@ a:not(:hover) {
   font-weight: 500;
 }
 
-
-td.MuiTableCell-root, th.MuiTableCell-root {
+td.MuiTableCell-root,
+th.MuiTableCell-root {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 div.MuiTableContainer-root {
   box-shadow: none;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
 }
