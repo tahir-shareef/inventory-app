@@ -68,9 +68,9 @@ const NavLink = ({ href, isHaveDropdown, dropdown, icon, label }) => {
         }}
       >
         <Box onMouseLeave={handleClose}>
-          {dropdown.map((l) => {
+          {dropdown.map((l, i) => {
             return (
-              <Box>
+              <Box key={i}>
                 <Button
                   onClick={() => {
                     navigate(l.href);

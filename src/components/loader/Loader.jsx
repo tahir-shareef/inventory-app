@@ -1,9 +1,19 @@
 import React from 'react';
 import './loader.css';
 
-const Loader = () => {
-  return (
-    <div class="loader">
+const Loader = ({ fullPage }) => {
+  return fullPage ? (
+    <div className='full-page'>
+      <div className="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  ) : (
+    <div className="loader">
       <div></div>
       <div></div>
       <div></div>

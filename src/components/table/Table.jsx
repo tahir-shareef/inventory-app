@@ -19,8 +19,8 @@ export default function BasicTable({ headcells = [], children, showCheckBox }) {
                 <Checkbox />
               </TableCell>
             )}
-            {headcells.map((t) => {
-              return <TableCell>{t.label}</TableCell>;
+            {headcells.map((t, i) => {
+              return <TableCell key={i}>{t.label}</TableCell>;
             })}
           </TableRow>
         </TableHead>

@@ -37,9 +37,9 @@ const Dashboard = () => {
   return (
     <Box className="dashboard">
       <Box className="list-row">
-        {cardItems.map((item) => {
+        {cardItems.map((item, i) => {
           return (
-            <Card sx={{ width: '25%' }}>
+            <Card key={i} sx={{ width: '25%' }}>
               <Grid container alignItems="center">
                 <Grid item xs={2}>
                   {item.icon}

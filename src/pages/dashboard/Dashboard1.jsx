@@ -37,9 +37,9 @@ const Dashboard = () => {
   return (
     <Box className="dashboard">
       <Box className="list-row">
-        {cardItems.map((item) => {
+        {cardItems.map((item, i) => {
           return (
-            <Card sx={{ width: '25%' }}>
+            <Card key={i} sx={{ width: '25%' }}>
               <Typography marginBottom={2}>{item.title}</Typography>
               <Grid container alignItems="center">
                 <Grid item xs={2}>
@@ -101,7 +101,7 @@ const Dashboard = () => {
                   <TableCell>Alert amt.</TableCell>
                   <TableCell>Status</TableCell>
                 </TableRow>
-              </BasicTable> 
+              </BasicTable>
             </Card>
           </Grid>
           <Grid xs={4} item>
