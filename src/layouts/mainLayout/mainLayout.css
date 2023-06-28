@@ -1,0 +1,14 @@
+.app .MuiPaper-root.MuiDrawer-paperAnchorLeft {
+  background-color: #101540;
+  color: white;
+}
+
+.app .MuiPaper-root.MuiDrawer-paperAnchorLeft svg {
+  background-color: #101540;
+  color: white;
+}
+
+.app main {
+  height: 100vh;
+  background-color: #eaf0f5;
+}

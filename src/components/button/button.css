@@ -1,0 +1,20 @@
+.custom-button.MuiButtonBase-root {
+  background-color: #101540;
+  text-transform: none;
+  font-size: 12px;
+  padding: 13px 0;
+  border-radius: 15px;
+  font-weight: 400;
+}
+
+.custom-button.MuiButtonBase-root:hover {
+  background-color: #1c2572;
+}
+
+.google-icon.MuiButtonBase-root {
+  border-radius: 25px;
+  text-transform: lowercase;
+  padding: 10px;
+  color: black;
+  border-color: black;
+}

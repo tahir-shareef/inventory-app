@@ -1,11 +1,10 @@
 import React from 'react';
-import './blankLayout.css';
 import { Outlet } from 'react-router-dom';
+import './blankLayout.css';
 
 const BlankLayout = () => {
   return (
-    <div>
-      <div>hey</div>
+    <div className="blank-layout">
       <Outlet />
     </div>
   );

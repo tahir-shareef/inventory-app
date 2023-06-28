@@ -1,0 +1,25 @@
+.navlink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-transform: none;
+  margin: 10px 0px;
+  color: #b0b0b0;
+}
+
+.navlink.active::before {
+  content: '';
+  height: 100%;
+  position: absolute;
+  left: 0;
+  border: 2px solid white;
+}
+
+.navlink span {
+  font-size: 10px;
+}
+
+.navlink svg {
+  width: 20px;
+}

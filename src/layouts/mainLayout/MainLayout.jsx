@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navigate, Outlet } from 'react-router-dom';
-import "./mainLayout.css"
+import NavAndSidebarLayout from '../sidebar/Sidebar';
+import './mainLayout.css';
 
 const MainLayout = () => {
   const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
@@ -11,8 +12,7 @@ const MainLayout = () => {
 
   return (
     <div>
-      <div>main layout</div>
-      <Outlet />
+      <NavAndSidebarLayout mainComponent={<Outlet />} />
     </div>
   );
 };

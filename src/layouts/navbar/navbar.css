@@ -1,0 +1,38 @@
+.MuiSvgIcon-root {
+  font-size: 2rem;
+}
+.MuiSelect-outlined {
+  padding: 0;
+}
+
+header.MuiAppBar-root {
+  background-color: white;
+  box-shadow: none;
+}
+
+header.MuiAppBar-root {
+  background-color: white;
+}
+
+header.MuiAppBar-root button svg {
+  color: rgb(0, 0, 0);
+}
+
+header .search-icon svg {
+  background-color: rgb(199, 199, 199);
+}
+
+header .search-icon svg,
+header button svg {
+  font-size: 25px !important;
+}
+
+header .MuiAvatar-root {
+  width: 35px;
+  height: 35px;
+}
+
+header .arrow-svg {
+  transform: scale(0.6);
+  margin-left: -5px;
+}
