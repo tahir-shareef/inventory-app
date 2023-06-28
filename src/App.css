@@ -41,3 +41,13 @@ a:not(:hover) {
   font-size: 0.9rem;
   font-weight: 500;
 }
+
+
+td.MuiTableCell-root, th.MuiTableCell-root {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+div.MuiTableContainer-root {
+  box-shadow: none;
+}

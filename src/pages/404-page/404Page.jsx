@@ -25,7 +25,7 @@ const Page404 = () => {
         width={'200px'}
         variant="contained"
       >
-        <Link to={'/'}> Go to dashboard</Link>
+        <Link to={'/dashboard-1'}> Go to dashboard</Link>
       </Button>
     </Box>
   );
