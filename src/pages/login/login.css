@@ -1,15 +1,15 @@
-.signup-page,
-.signup-right,
-.signup-left {
+.login-page,
+.login-right,
+.login-left {
   height: 100%;
 }
-.signup-page .signup-right img {
+.login-page .login-right img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.signup-page .signup-right {
+.login-page .login-right {
   height: 100%;
   padding: 5px 20px;
 }

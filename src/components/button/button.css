@@ -13,7 +13,7 @@
 
 .google-icon.MuiButtonBase-root {
   border-radius: 25px;
-  text-transform: lowercase;
+  text-transform: none;
   padding: 10px;
   color: black;
   border-color: black;

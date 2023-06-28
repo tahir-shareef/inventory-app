@@ -5,16 +5,17 @@ import BoxRow from '../../components/boxRow/BoxRow';
 import TextField from '../../components/TextField/TextField';
 import Checkbox from '../../components/checkbox/Checkbox';
 import Button from '../../components/button/Button';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './login.css';
 
-const Signup = () => {
+const Login = () => {
+  const navigate = useNavigate();
   return (
-    <Grid container className="signup-page" spacing={2}>
+    <Grid container className="login-page" spacing={2}>
       {/* Left side */}
 
       <Grid item md={4} sm={12}>
-        <Box className="signup-right">
+        <Box className="login-right">
           <BoxRow />
           <Typography marginBottom="30px" variant="h5">
             Login
@@ -24,16 +25,20 @@ const Signup = () => {
             See your growth and get support!
           </Typography>
 
-          <form className="form-fields">
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              navigate('/dashboard-1');
+              localStorage.setItem('isLoggedIn', 'true');
+            }}
+            className="form-fields"
+          >
             <Grid container columnSpacing={3} marginBottom={2}>
               <Grid xs={12} item>
                 <Button
                   fullWidth
                   endIcon={
-                    <svg
-                      width="25"
-                      viewBox="0 0 186.69 190.5"
-                    >
+                    <svg width="25" viewBox="0 0 186.69 190.5">
                       <g transform="translate(1184.583 765.171)">
                         <path
                           clip-path="none"
@@ -122,7 +127,7 @@ const Signup = () => {
 
       {/* Right side */}
       <Grid item md={8} sm={12}>
-        <Box className="signup-right">
+        <Box className="login-right">
           <img src={CoverImage} alt="cover" />
         </Box>
       </Grid>
@@ -130,4 +135,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Login;

@@ -1,0 +1,8 @@
+.dashboard .list-row {
+  display: flex;
+  flex-wrap: nowrap;
+  /* gap: 15px; */
+}
+.dashboard .list-row .add-icon {
+  color: green;
+}

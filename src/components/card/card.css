@@ -1,0 +1,16 @@
+.card {
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px #0000003d;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.card:first-child {
+  margin-left: 0;
+}
+
+.card:last-child {
+  margin-right: 0;
+}

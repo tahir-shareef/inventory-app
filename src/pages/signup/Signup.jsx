@@ -5,10 +5,11 @@ import BoxRow from '../../components/boxRow/BoxRow';
 import TextField from '../../components/TextField/TextField';
 import Checkbox from '../../components/checkbox/Checkbox';
 import Button from '../../components/button/Button';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './signup.css';
 
 const Signup = () => {
+  const navigate = useNavigate();
   return (
     <Grid container className="signup-page" spacing={2}>
       {/* Left side */}
@@ -33,7 +34,15 @@ const Signup = () => {
             begin setting up your work profile
           </Typography>
 
-          <form className="form-fields">
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              localStorage.setItem('isLoggedIn', 'true');
+              navigate('/dashboard-1');
+            }}
+            className="form-fields"
+          >
+            {' '}
             <Grid container columnSpacing={3} marginBottom={3}>
               <Grid xs={6} item>
                 <TextField
@@ -50,7 +59,6 @@ const Signup = () => {
                 />
               </Grid>
             </Grid>
-
             <Grid container columnSpacing={3} marginBottom={3}>
               <Grid xs={6} item>
                 <TextField
@@ -67,7 +75,6 @@ const Signup = () => {
                 />
               </Grid>
             </Grid>
-
             <Grid container columnSpacing={3} marginBottom={2}>
               <Grid xs={12} item>
                 <TextField
@@ -77,7 +84,6 @@ const Signup = () => {
                 />
               </Grid>
             </Grid>
-
             <Box marginBottom={2}>
               <Checkbox
                 label={
@@ -94,13 +100,11 @@ const Signup = () => {
                 }
               />
             </Box>
-
             <Box marginBottom={2}>
               <Button type="submit" width="200px">
                 Sign up
               </Button>
             </Box>
-
             <Box>
               <Typography className="subtitle">
                 Already have an account? <Link to="/login">Log in</Link>
